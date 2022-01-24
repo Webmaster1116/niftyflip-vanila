@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nifltyflip</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Begin: Sidebar -->
+    <section class="sidebar">
+      <ul class="mt-5">
+        <li><i class="fa fa-wifi"></i></li>
+        <li><i class="fa fa-soccer-ball-o"></i></li>
+        <li><i class="fa fa-gamepad"></i></li>
+        <li><i class="fa fa-calendar-check-o"></i></li>
+        <li><i class="fa fa-street-view"></i></li>
+        <li><i class="fa fa-rocket"></i></li>
+        <li><i class="fa fa-tags"></i></li>
+        <li><i class="fa fa-ticket"></i></li>
+        <li><i class="fa fa-bomb"></i></li>
+      </ul>
+      <div class="mt-1 border"></div>
+      <ul>
+        <li><i class="fa fa-handshake-o"></i></li>
+        <li><i class="fa fa-hard-of-hearing"></i></li>
+      </ul>
+    </section>
+    <!-- End: Sidebar -->
+
+    <!-- Begin: Header -->
+    <section class="navbar d-flex justify-content-between">
+      <div class="d-flex justify-content-between align-items-center">
+        <header>
+          <i class="fa fa-bars"></i>
+        </header>
+        <div class="logo">
+          <img src="assets/img/logo.png" width="35px" />
+          <h3>Niftyflip</h3>
+        </div>
+        <ul>
+          <li class="mx-03">Coinflip</li>
+          <li class="mx-03">RPS</li>
+          <li class="mx-03">Crash</li>
+          <li class="mx-03">Roullete</li>
+        </ul>
+      </div>
+      <div class="d-flex btn-group">
+        <button class="btn btn-dark" id="open_chatbox">
+          <i class="fa fa-comments"></i>
+        </button>
+        <button class="btn btn-pink">Connect wallet</button>
+      </div>
+    </section>
+    <!-- End: Header -->
+
+    <!-- Begin: Main section -->
+    <section class="main">
+      <div class="dashboard">
+        <!-- Begin: Introduction part -->
+        <div class="intro">
+          <div class="text">
+            <h1 style="font-size: 1.9rem">Let the adventure<br />begin</h1>
+            <label>
+              Solana's first P2P gambleing site<br />what are you waiting for?
+            </label>
+            <div>
+              <button class="btn btn-pink btn-shadow mt-4">Join Discord</button>
+            </div>
+          </div>
+          <div class="avatar-box">
+            <span class="avatar">
+              <img
+                src="assets/img/avatar3.png"
+                width="180px"
+                class="avatar-style"
+              />
+            </span>
+            <span class="avatar">
+              <img
+                src="assets/img/avatar.gif"
+                width="180px"
+                class="avatar-style"
+              />
+            </span>
+            <span class="avatar">
+              <img
+                src="assets/img/avatar1.png"
+                width="180px"
+                class="avatar-style"
+              />
+            </span>
+          </div>
+        </div>
+        <!-- End: Introduction part -->
+
+        <!-- Begin: Filter and game create part -->
+        <div
+          class="d-flex justify-content-between align-items-center my-3"
+          style="font-size: 0.9rem"
+        >
+          <div class="d-flex align-items-center toggle color-white">
+            <span>Sort by price</span>
+            <input type="checkbox" id="switch" /><label for="switch"
+              >Toggle</label
+            >
+            <span style="margin-left: 10px">Sort by date</span>
+          </div>
+          <div class="d-flex">
+            <div class="d-flex align-items-center dark mx-03">
+              <i class="fa fa-circle-o" style="font-size: 1.4rem"></i>
+              <span class="mx-03"
+                >Total games <span style="font-weight: bold">10 </span></span
+              >
+            </div>
+            <div class="d-flex align-items-center dark mx-03">
+              <i class="fa fa-circle-o" style="font-size: 1.4rem"></i>
+              <span class="mx-03"
+                >Total value <span style="font-weight: bold">10,201</span></span
+              >
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-pink">Create games</button>
+          </div>
+        </div>
+        <!-- End: Filter and game create part -->
+
+        <!-- Begin: List part -->
+        <div class="list">
+          <div class="d-flex aling-items-center">
+            <div class="avatar-list">
+              <div class="dark-panel">
+                <i
+                  class="fa fa-circle-o pr-03"
+                  style="border-right: 1px solid #262c40"
+                ></i>
+                <img
+                  src="assets/img/avatarmini1.png"
+                  class="mx-03"
+                  style="border-radius: 50%"
+                  width="20px"
+                />
+                <img
+                  src="assets/img/avatarmini1.png"
+                  class="mx-03 avatar-outline"
+                  width="20px"
+                />
+              </div>
+            </div>
+            <div class="dark-panel mx-03 ml-03">
+              <img
+                src="assets/img/avatar.gif"
+                width="23px"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="dark-panel mx-03">
+              <img
+                src="assets/img/avatar.gif"
+                width="23px"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="dark-panel mx-03">
+              <img
+                src="assets/img/avatar.gif"
+                width="23px"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="dark-panel mx-03">
+              <img
+                src="assets/img/avatar.gif"
+                width="23px"
+                style="border-radius: 50%"
+              />
+            </div>
+          </div>
+          <div class="item-list">
+            <div class="dark-panel color-white">19 SOL</div>
+            <div class="dark-panel color-white">Join</div>
+            <div class="dark-panel color-white">
+              <i class="fa fa-eye"></i
+              ><span style="margin-left: 5px">Spectate</span>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <div class="d-flex aling-items-center">
+            <div class="avatar-list">
+              <div class="dark-panel">
+                <i
+                  class="fa fa-circle-o pr-03"
+                  style="border-right: 1px solid #262c40"
+                ></i>
+                <img
+                  src="assets/img/avatarmini1.png"
+                  class="mx-03"
+                  style="border-radius: 50%"
+                  width="20px"
+                />
+                <img
+                  src="assets/img/avatarmini1.png"
+                  class="mx-03 avatar-outline"
+                  width="20px"
+                />
+              </div>
+            </div>
+            <div class="dark-panel mx-03 ml-03">
+              <img
+                src="assets/img/avatar.gif"
+                width="23px"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="dark-panel mx-03">
+              <img
+                src="assets/img/avatar.gif"
+                width="23px"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="dark-panel mx-03">
+              <img
+                src="assets/img/avatar.gif"
+                width="23px"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="dark-panel mx-03">
+              <img
+                src="assets/img/avatar.gif"
+                width="23px"
+                style="border-radius: 50%"
+              />
+            </div>
+          </div>
+          <div class="item-list">
+            <div class="dark-panel color-white">19 SOL</div>
+            <div class="dark-panel color-white">Join</div>
+            <div class="dark-panel color-white">
+              <i class="fa fa-eye"></i
+              ><span style="margin-left: 5px">Spectate</span>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <div class="d-flex aling-items-center">
+            <div class="avatar-list">
+              <div class="dark-panel">
+                <i
+                  class="fa fa-circle-o pr-03"
+                  style="border-right: 1px solid #262c40"
+                ></i>
+                <img
+                  src="assets/img/avatarmini1.png"
+                  class="mx-03"
+                  style="border-radius: 50%"
+                  width="20px"
+                />
+                <img
+                  src="assets/img/avatarmini1.png"
+                  class="mx-03 avatar-outline"
+                  width="20px"
+                />
+              </div>
+            </div>
+            <div class="dark-panel mx-03 ml-03">
+              <img
+                src="assets/img/avatar.gif"
+                width="23px"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="dark-panel mx-03">
+              <img
+                src="assets/img/avatar.gif"
+                width="23px"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="dark-panel mx-03">
+              <img
+                src="assets/img/avatar.gif"
+                width="23px"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="dark-panel mx-03">
+              <img
+                src="assets/img/avatar.gif"
+                width="23px"
+                style="border-radius: 50%"
+              />
+            </div>
+          </div>
+          <div class="item-list">
+            <div class="dark-panel color-white">19 SOL</div>
+            <div class="dark-panel color-white">Join</div>
+            <div class="dark-panel color-white">
+              <i class="fa fa-eye"></i
+              ><span style="margin-left: 5px">Spectate</span>
+            </div>
+          </div>
+        </div>
+        <!-- End: List part -->
+      </div>
+    </section>
+    <!-- End: Section -->
+
+    <!-- Begin: Chatbox section -->
+    <section>
+      <div class="chat-box">
+        <!-- Begin: Chatbox header -->
+        <div class="chat-header">
+          <div class="d-flex align-items-center">
+            <i class="fa fa-globe" style="color: #444444; font-size: 1.2rem"></i
+            ><span class="mx-03 color-white">Global</span>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <i
+                class="fa fa-circle mx-03"
+                style="font-size: 0.6rem; color: #9b7bee"
+              ></i
+              ><span class="color-white mx-03">137</span
+              ><i class="fa fa-users mx-03" style="color: #444444"></i>
+            </div>
+            <div class="mx-03" style="border-left: 1px solid #444444">
+              <button class="btn btn-close">
+                <span>x</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- End: Chatbox header -->
+
+        <!-- Begin: Chatbox list -->
+        <div class="chat-list">
+          <div class="message">
+            <div>
+              <img
+                src="assets/img/avatarmini1.png"
+                class="avatar-outline"
+                width="25px"
+              />
+              <p class="text-center color-white" style="font-size: 0.5rem">
+                User
+              </p>
+            </div>
+            <div class="chat-content">
+              <div class="d-flex align-items-center justify-content-between">
+                <p style="margin: 0">A9i8...98Bz</p>
+                <p style="margin: 0">12:00</p>
+              </div>
+              <div class="content">
+                <p style="margin: 0">
+                  Gg finessedGg finessedGg finessedGg finessedGg finessed
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End: Chatbox list -->
+
+        <!-- Begin: Chatbox footer -->
+        <div class="chat-board">
+          <div class="send-box">
+            <textarea
+              class="edit-text"
+              cols="30"
+              placeholder="Type here..."
+            ></textarea>
+            <button class="btn btn-send"><i class="fa fa-send"></i></button>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="mt-1 color-white">
+              <i class="fa fa-twitter mx-03"></i
+              ><i class="fa fa-twitter mx-03"></i>
+            </div>
+            <span class="mt-1 gif-text">GIF</span>
+          </div>
+        </div>
+        <!-- End: Chatbox footer -->
+      </div>
+    </section>
+    <!-- End: section -->
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
