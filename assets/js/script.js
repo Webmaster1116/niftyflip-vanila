@@ -22,38 +22,41 @@ let sideBar = document.querySelector(".sidebar");
 let openMenu = document.getElementById("open_menu");
 let vMenu = document.querySelector(".v-menu");
 
+// openChatBox.addEventListener("click", () => {
+//   if (getComputedStyle(chatBox).display == "flex") {
+//     chatBoxClose()
+//   } else {
+//     chatBox.style.display = "flex"
+//     main.style.width = "calc(100% - 440px)"
+//   }
+// })
+
+// closeChatBox.addEventListener("click", chatBoxClose)
+
+// function chatBoxClose() {
+//   chatBox.style.display = "none"
+//   main.style.width = "calc(100% - 118px)"
+//   arrowBtn.style.display = "none"
+// }
+
 openChatBox.addEventListener("click", () => {
-  if (getComputedStyle(chatBox).display == "flex") {
-    chatBoxClose();
-  } else {
-    chatBox.style.display = "flex";
-    main.style.width = "calc(100% - 440px)";
-  }
-});
-
-closeChatBox.addEventListener("click", chatBoxClose);
-
-function chatBoxClose() {
-  chatBox.style.display = "none";
-  main.style.width = "calc(100% - 118px)";
-  arrowBtn.style.display = "none";
-}
-
-arrow.addEventListener("click", () => {
-  if (getComputedStyle(chatBox).right == "-320px") {
+  if (getComputedStyle(chatBox).right == "-416px") {
     chatBox.style.right = "1rem";
-    arrowBtn.style.right = "315px";
-    main.style.width = "calc(100% - 118px)";
-    arrowIcon.classList.remove("fa-arrow-left");
-    arrowIcon.classList.add("fa-arrow-right");
   } else {
-    chatBox.style.right = "-320px";
-    arrowBtn.style.right = "0px";
-    arrowIcon.classList.add("fa-arrow-left");
-    arrowIcon.classList.remove("fa-arrow-right");
+    chatBox.style.right = "-26rem";
   }
+  if (window.innerWidth > 798) main.style.width = "calc(100% - 440px)";
+  else main.style.width = "calc(100% - 48px)";
 });
 
+closeChatBox.addEventListener("click", () => {
+  chatBox.style.right = "-320px";
+  main.style.width = "calc(100% - 118px)";
+  if (window.innerWidth > 798) main.style.width = "calc(100% - 440px)";
+  else main.style.width = "calc(100% - 48px)";
+});
+
+// Sidebar hide and show function
 openSideBar.addEventListener("click", () => {
   if (getComputedStyle(sideBar).display == "flex") {
     sideBar.style.display = "none";
