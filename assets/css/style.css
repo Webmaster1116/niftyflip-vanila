@@ -57,6 +57,11 @@ body {
   display: flex;
 }
 
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -101,6 +106,9 @@ ul li {
 .sidebar {
   position: absolute;
   top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 70px;
   height: 100%;
   background-color: #222638;
@@ -442,9 +450,11 @@ label:active:after {
 
 .edit-text {
   background-color: #222638;
+  height: 16px;
+  overflow-y: hidden;
   border-radius: 20px;
   border: none;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   color: white;
   border: none;
   outline: none;
@@ -479,6 +489,18 @@ label:active:after {
 
 .btn-send:hover {
   color: #949292;
+}
+
+.lang-pan {
+  background-color: #262e42;
+  color: white;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 /* Responsive style */
