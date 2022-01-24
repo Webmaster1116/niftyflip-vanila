@@ -14,21 +14,31 @@
   <body>
     <!-- Begin: Sidebar -->
     <section class="sidebar">
-      <ul class="mt-5">
-        <li><i class="fa fa-wifi"></i></li>
-        <li><i class="fa fa-soccer-ball-o"></i></li>
-        <li><i class="fa fa-gamepad"></i></li>
-        <li><i class="fa fa-calendar-check-o"></i></li>
-        <li><i class="fa fa-street-view"></i></li>
-        <li><i class="fa fa-rocket"></i></li>
-        <li><i class="fa fa-tags"></i></li>
-        <li><i class="fa fa-ticket"></i></li>
-        <li><i class="fa fa-bomb"></i></li>
-      </ul>
-      <div class="mt-1 border"></div>
-      <ul>
-        <li><i class="fa fa-handshake-o"></i></li>
-        <li><i class="fa fa-hard-of-hearing"></i></li>
+      <div>
+        <ul class="mt-5">
+          <li><i class="fa fa-wifi"></i></li>
+          <li><i class="fa fa-soccer-ball-o"></i></li>
+          <li><i class="fa fa-gamepad"></i></li>
+          <li><i class="fa fa-calendar-check-o"></i></li>
+          <li><i class="fa fa-street-view"></i></li>
+          <li><i class="fa fa-rocket"></i></li>
+          <li><i class="fa fa-tags"></i></li>
+          <li><i class="fa fa-ticket"></i></li>
+          <li><i class="fa fa-bomb"></i></li>
+        </ul>
+        <div class="mt-1 border"></div>
+        <ul>
+          <li><i class="fa fa-handshake-o"></i></li>
+          <li><i class="fa fa-hard-of-hearing"></i></li>
+        </ul>
+      </div>
+      <ul style="padding: 0 0.8rem">
+        <li class="lang-pan">
+          <span>Eng</span>
+        </li>
+        <li class="lang-pen night-mode">
+          <i class="fa fa-hard-of-hearing"></i>
+        </li>
       </ul>
     </section>
     <!-- End: Sidebar -->
@@ -36,14 +46,20 @@
     <!-- Begin: Header -->
     <section class="navbar d-flex justify-content-between">
       <div class="d-flex justify-content-between align-items-center">
-        <header>
+        <header id="btn_sidebar">
           <i class="fa fa-bars"></i>
         </header>
         <div class="logo">
           <img src="assets/img/logo.png" width="35px" />
           <h3>Niftyflip</h3>
         </div>
-        <ul>
+        <ul class="h-menu">
+          <li class="mx-03">Coinflip</li>
+          <li class="mx-03">RPS</li>
+          <li class="mx-03">Crash</li>
+          <li class="mx-03">Roullete</li>
+        </ul>
+        <ul class="v-menu">
           <li class="mx-03">Coinflip</li>
           <li class="mx-03">RPS</li>
           <li class="mx-03">Crash</li>
@@ -51,6 +67,9 @@
         </ul>
       </div>
       <div class="d-flex btn-group">
+        <button class="btn btn-dark" id="open_menu">
+          <i class="fa fa-bars"></i>
+        </button>
         <button class="btn btn-dark" id="open_chatbox">
           <i class="fa fa-comments"></i>
         </button>
@@ -70,7 +89,7 @@
               Solana's first P2P gambleing site<br />what are you waiting for?
             </label>
             <div>
-              <button class="btn btn-pink btn-shadow mt-4">Join Discord</button>
+              <button class="btn btn-pink btn-shadow mt-4 mt-2 line-height-2">Join Discord</button>
             </div>
           </div>
           <div class="avatar-box">
@@ -100,18 +119,15 @@
         <!-- End: Introduction part -->
 
         <!-- Begin: Filter and game create part -->
-        <div
-          class="d-flex justify-content-between align-items-center my-3"
-          style="font-size: 0.9rem"
-        >
-          <div class="d-flex align-items-center toggle color-white">
+        <div class="filter-group my-3">
+          <div class="d-flex align-items-center toggle color-white sm-12">
             <span>Sort by price</span>
             <input type="checkbox" id="switch" /><label for="switch"
               >Toggle</label
             >
             <span style="margin-left: 10px">Sort by date</span>
           </div>
-          <div class="d-flex">
+          <div class="d-flex sm-9 text-right">
             <div class="d-flex align-items-center dark mx-03">
               <i class="fa fa-circle-o" style="font-size: 1.4rem"></i>
               <span class="mx-03"
@@ -125,15 +141,15 @@
               >
             </div>
           </div>
-          <div>
-            <button class="btn btn-pink">Create games</button>
+          <div class="sm-3">
+            <button class="btn btn-pink line-height-2">Create games</button>
           </div>
         </div>
         <!-- End: Filter and game create part -->
 
         <!-- Begin: List part -->
         <div class="list">
-          <div class="d-flex aling-items-center">
+          <div class="d-flex aling-items-center sm-12">
             <div class="avatar-list">
               <div class="dark-panel">
                 <i
@@ -192,7 +208,7 @@
           </div>
         </div>
         <div class="list">
-          <div class="d-flex aling-items-center">
+          <div class="d-flex aling-items-center sm-12">
             <div class="avatar-list">
               <div class="dark-panel">
                 <i
@@ -251,7 +267,7 @@
           </div>
         </div>
         <div class="list">
-          <div class="d-flex aling-items-center">
+          <div class="d-flex aling-items-center sm-12">
             <div class="avatar-list">
               <div class="dark-panel">
                 <i
@@ -316,6 +332,7 @@
 
     <!-- Begin: Chatbox section -->
     <section>
+      <div class="arrow" id="btn_arrow"><i class="fa fa-arrow-left" id="arrow_icon"></div>
       <div class="chat-box">
         <!-- Begin: Chatbox header -->
         <div class="chat-header">
