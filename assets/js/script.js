@@ -50,7 +50,7 @@ openChatBox.addEventListener("click", () => {
 });
 
 closeChatBox.addEventListener("click", () => {
-  chatBox.style.right = "-320px";
+  chatBox.style.right = "-26rem";
   main.style.width = "calc(100% - 118px)";
   if (window.innerWidth > 798) main.style.width = "calc(100% - 440px)";
   else main.style.width = "calc(100% - 48px)";
