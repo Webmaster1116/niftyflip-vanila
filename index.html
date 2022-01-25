@@ -54,9 +54,9 @@
           <h3>Niftyflip</h3>
         </div>
         <ul class="h-menu">
-          <li class="mx-03">Coinflip</li>
-          <li class="mx-03">RPS</li>
-          <li class="mx-03">Crash</li>
+          <li class="mx-03"><a href="withdraw.html">Coinflip</a></li>
+          <li class="mx-03"><a href="deposit.html">RPS</a></li>
+          <li class="mx-03"><a href="index.html">Crash</a></li>
           <li class="mx-03">Roullete</li>
         </ul>
         <ul class="v-menu">
@@ -205,7 +205,7 @@
             <div class="dark-panel color-white">Join</div>
             <div class="dark-panel color-white">
               <i class="fa fa-eye"></i
-              ><span style="margin-left: 5px">Spectate</span>
+              ><span style="margin-left: 5px" id="view_modal">Spectate</span>
             </div>
           </div>
         </div>
@@ -332,6 +332,36 @@
     </section>
     <!-- End: Section -->
 
+    <!-- Begin: Modal -->
+    <div class="modal-container">
+      <div class="modal">
+        <div class="modal-header">
+          <span class="btn btn-close modal-close" id="close_modal">x</span>
+          <img class="avatar-outline" src="assets/img/avatarmini1.png" />
+        </div>
+        <div class="modal-body">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="chat-item">
+              <div class="dark-panel justify-content-center">
+                <span>Coinflip&nbsp;created</span>
+              </div>
+              <div class="dark-panel justify-content-center">
+                <span>Coinflip&nbsp;Won</span>
+              </div>
+              <div class="dark-panel justify-content-center">
+                <span>Deposts</span>
+              </div>
+              <div class="dark-panel justify-content-center">
+                <span>Withdraws</span>
+              </div>
+            </div>
+            <div class="chart-panel" id="chart_panel"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End: Modal -->
+
     <!-- Begin: Chatbox section -->
     <section>
       <div class="chat-box">
@@ -410,6 +440,7 @@
     </section>
     <!-- End: section -->
 
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-base.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
