@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Nifltyflip</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/withdraw.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -51,14 +50,20 @@
           <i class="fa fa-bars"></i>
         </header>
         <div class="logo">
-          <img src="assets/img/logo.png" width="35px" />
-          <h3>Niftyflip</h3>
+          <a onclick="router.loadRoute('')" class="d-flex align-items-center">
+            <img src="assets/img/logo.png" width="35px" />
+            <h3>Niftyflip</h3>
+          </a>
         </div>
         <ul class="h-menu">
-          <li class="mx-03" class="route"><a href="#withdraw" id = "withdraw">Coinflip</a></li>
-          <li class="mx-03" class="route"><a href="#deposit" id = "deposit">RPS</a></li>
-          <li class="mx-03" class="route">Crash</a></li>
-          <li class="mx-03" class="route">Roullete</li>
+          <li class="mx-03">
+            <a onclick="router.loadRoute('withdraw')">Coinflip</a>
+          </li>
+          <li class="mx-03">
+            <a onclick="router.loadRoute('deposit')">RPS</a>
+          </li>
+          <li class="mx-03">Crash</li>
+          <li class="mx-03">Roullete</li>
         </ul>
         <ul class="v-menu">
           <li class="mx-03">Coinflip</li>
@@ -79,37 +84,94 @@
     </section>
     <!-- End: Header -->
 
+    <!-- Begin: Chatbox section -->
+    <section>
+      <div class="chat-box">
+        <!-- Begin: Chatbox header -->
+        <div class="chat-header">
+          <div class="d-flex align-items-center">
+            <i class="fa fa-globe" style="color: #444444; font-size: 1.2rem"></i
+            ><span class="mx-03 color-white">Global</span>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <i
+                class="fa fa-circle mx-03"
+                style="font-size: 0.6rem; color: #9b7bee"
+              ></i
+              ><span class="color-white mx-03">137</span
+              ><i class="fa fa-users mx-03" style="color: #444444"></i>
+            </div>
+            <div class="mx-03" style="border-left: 1px solid #444444">
+              <button class="btn btn-close" id="close_chatbox">
+                <span>x</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- End: Chatbox header -->
+
+        <!-- Begin: Chatbox list -->
+        <div class="chat-list">
+          <div class="message">
+            <div>
+              <img
+                src="assets/img/avatarmini1.png"
+                class="avatar-outline"
+                width="25px"
+              />
+              <p class="text-center color-white" style="font-size: 0.5rem">
+                User
+              </p>
+            </div>
+            <div class="chat-content">
+              <div class="d-flex align-items-center justify-content-between">
+                <p style="margin: 0">A9i8...98Bz</p>
+                <p style="margin: 0">12:00</p>
+              </div>
+              <div class="content">
+                <p style="margin: 0">
+                  Gg finessedGg finessedGg finessedGg finessedGg finessed
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End: Chatbox list -->
+
+        <!-- Begin: Chatbox footer -->
+        <div class="chat-board">
+          <div class="send-box">
+            <textarea
+              class="edit-text"
+              cols="30"
+              placeholder="Type here..."
+            ></textarea>
+            <button class="btn btn-send"><i class="fa fa-send"></i></button>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="mt-1 color-white">
+              <i class="fa fa-twitter mx-03"></i
+              ><i class="fa fa-twitter mx-03"></i>
+            </div>
+            <span class="mt-1 gif-text">GIF</span>
+          </div>
+        </div>
+        <!-- End: Chatbox footer -->
+      </div>
+    </section>
+    <!-- End: section -->
+
     <!-- Begin: Main section -->
-    <div id="root"></div>
-    <script type="module">
-      function onRouteChanged() {
-        const hash = window.location.hash;
-        const routerView = $("#router-view"); // updated
+    <section class="main">
+      <div data-router-outlet></div>
+    </section>
+    <!-- End: Section -->
 
-        if (!(routerView instanceof HTMLElement)) {
-          throw new ReferenceError("No router view element available for rendering");
-        }
-
-        switch (hash) {
-          case "#withdraw":
-            //routerView.innerHTML = "<h1>Home page</h1>";
-            routerView.load('views/home.html'); // updated
-            break;
-
-          case "#deposit":
-            //routerView.innerHTML = "<h1>About page</h1>";
-            routerView.load('views/about.html'); // updated
-            break;
-
-          default:
-            //routerView.innerHTML = "<h1>404 - Page Not Found</h1>";
-            routerView.load('views/404.html'); // updated
-            break;
-        }
-      }
-    </script>
     <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-base.min.js"></script>
-    <!-- <script src="assets/js/script.js"></script> -->
-    <!-- <script src="assets/js/withdraw.js"></script> -->
+    <script src="./assets/js/router.js"></script>
+    <script src="./assets/js/routes.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
