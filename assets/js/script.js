@@ -2,12 +2,15 @@
 let openChatBox = document.getElementById("open_chatbox")
 let closeChatBox = document.getElementById("close_chatbox")
 let openMenu = document.getElementById("open_menu")
+let btnConnect = document.getElementById("connect_btn")
+let loginStatus = 0
 
 // Component variable
 let chatBox = document.querySelector(".chat-box")
 let main = document.querySelector(".main")
 let sideBar = document.querySelector(".sidebar")
 let vMenu = document.querySelector(".v-menu")
+let btnAvatar = document.querySelector(".user-avatar")
 
 // Chat send textarea auto resize function
 const tx = document.getElementsByTagName("textarea")
@@ -33,6 +36,10 @@ function getData() {
     ["7", 40, 34.4],
   ]
 }
+
+PopoverComponent.init({
+  ele: ".popover-demo",
+})
 
 // Chatbox hide and show function
 openChatBox.addEventListener("click", () => {
@@ -60,4 +67,16 @@ openMenu.addEventListener("click", () => {
   } else {
     vMenu.style.display = "none"
   }
+})
+
+btnConnect.addEventListener("click", () => {
+  loginStatus = 1
+  btnAvatar.style.display = "flex"
+  btnConnect.innerText = "Deposit"
+})
+
+window.addEventListener("load", (event) => {
+  loginStatus = 0
+  btnAvatar.style.display = "none"
+  btnConnect.innerText = "Connect wallet"
 })

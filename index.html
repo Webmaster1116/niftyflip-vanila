@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Nifltyflip</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/popover.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -57,10 +58,10 @@
         </div>
         <ul class="h-menu">
           <li class="mx-03">
-            <a onclick="router.loadRoute('withdraw')">Coinflip</a>
+            <a>Coinflip</a>
           </li>
           <li class="mx-03">
-            <a onclick="router.loadRoute('deposit')">RPS</a>
+            <a>RPS</a>
           </li>
           <li class="mx-03">Crash</li>
           <li class="mx-03">Roullete</li>
@@ -79,7 +80,30 @@
         <button class="btn btn-dark" id="open_chatbox">
           <i class="fa fa-comments"></i>
         </button>
-        <button class="btn btn-pink">Connect&nbsp;wallet</button>
+        <button
+          class="user-avatar popover-demo"
+          data-popover-target="#popover-target"
+        >
+          <img src="assets/img/avatarmini1.png" />
+          <i class="fa fa-sort-down"></i>
+        </button>
+        <button class="btn btn-pink" id="connect_btn">
+          Connect&nbsp;wallet
+        </button>
+      </div>
+      <div id="popover-target">
+        <div class="pop-comp-content text-center">
+          <ul>
+            <li class="my-1">Profile</li>
+            <li class="my-1" onclick="router.loadRoute('deposit')">Deposit</li>
+            <li class="my-1" onclick="router.loadRoute('withdraw')">
+              Withdraw
+            </li>
+            <li class="my-1">Provably fair</li>
+            <li class="my-1">FAQ</li>
+          </ul>
+          <img src="assets/img/logo.png" />
+        </div>
       </div>
     </section>
     <!-- End: Header -->
@@ -169,6 +193,7 @@
     <!-- End: Section -->
 
     <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-base.min.js"></script>
+    <script src="./assets/js/popover.min.js"></script>
     <script src="./assets/js/router.js"></script>
     <script src="./assets/js/routes.js"></script>
     <script src="./assets/js/index.js"></script>

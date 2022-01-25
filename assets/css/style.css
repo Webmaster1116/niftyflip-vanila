@@ -235,6 +235,69 @@ ul li:active {
   -o-border-radius: 5px;
 }
 
+.user-avatar {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: #a07aec;
+}
+
+.user-menu {
+  position: absolute;
+  top: 0;
+  right: 3rem;
+  display: block;
+  width: 100px;
+  height: 120px;
+  background-color: #292e42;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 60%);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  z-index: 3000;
+}
+
+.pop-comp-wrapper {
+  background-color: #292e42 !important;
+  width: 150px;
+  height: 200px;
+  border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -ms-border-radius: 10px !important;
+  -o-border-radius: 10px !important;
+}
+
+.pop-comp-content {
+  z-index: 9999 !important;
+  padding: 1rem !important;
+}
+
+.pop-comp-arrow::before {
+  background-color: #292e42 !important;
+}
+
+.user-avatar:hover {
+  color: #b69bee;
+}
+
+.user-avatar img {
+  width: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.user-avatar i {
+  margin-left: 5px;
+  font-size: 20px;
+}
+
 #close_checkout {
   width: 0;
   margin: 0 0.5rem;
@@ -314,7 +377,7 @@ ul li:active {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  z-index: 1000;
+  z-index: 999;
   transition: ease-in-out, 0.5s;
   -webkit-transition: ease-in-out, 0.5s;
   -moz-transition: ease-in-out, 0.5s;
