@@ -135,6 +135,10 @@ ul li:active {
   cursor: pointer;
 }
 
+.sidebar ul {
+  padding: 0 0.8rem;
+}
+
 /* Navbar style */
 .navbar {
   position: fixed;
@@ -280,11 +284,11 @@ ul li:active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  right: 1rem;
+  right: 0rem;
   width: 300px;
   height: calc(100vh - 6.5rem);
   background-color: #222638;
-  margin-top: 4.8rem;
+  margin-top: 5.8rem;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -602,13 +606,13 @@ header:hover {
 }
 
 /* Responsive style */
-@media (max-width: 1496px) {
+@media (max-width: 1512px) {
   .dashboard {
     padding: 0;
   }
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1366px) {
   .chat-box {
     right: -26rem;
     transition: ease-in-out, 0.5s;
@@ -627,7 +631,7 @@ header:hover {
   }
 }
 
-@media (max-width: 879px) {
+@media (max-width: 1024px) {
   .text h1 {
     font-size: 1.3rem !important;
   }
@@ -651,17 +655,14 @@ header:hover {
 
   .sm-3 {
     width: 34%;
-    margin-bottom: 1rem;
   }
 
   .sm-6 {
     width: 50%;
-    margin-bottom: 1rem;
   }
 
   .sm-9 {
     width: 66%;
-    margin-bottom: 1rem;
   }
 
   .text-right {
@@ -682,13 +683,13 @@ header:hover {
   }
 }
 
-@media (max-width: 739px) {
+@media (max-width: 840px) {
   .list {
     flex-wrap: wrap;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 680px) {
   .sidebar {
     display: none;
   }
@@ -699,31 +700,13 @@ header:hover {
   }
 }
 
-@media (max-width: 495px) {
-  .logo img {
-    width: 30px;
-  }
-
-  .logo h3 {
-    font-size: 1rem;
-  }
-
-  .btn-group {
-    padding: 0.5rem 0.2rem;
-  }
-}
-
-@media (max-width: 414px) {
+@media (max-width: 460px) {
   .logo img {
     width: 20px;
   }
 
   .logo h3 {
     font-size: 0.8rem;
-  }
-
-  .btn {
-    line-height: 1rem;
   }
 
   .btn-group {
@@ -747,6 +730,42 @@ header:hover {
   }
 
   .chat-box {
-    width: 92%;
+    width: 100%;
+    right: -30rem;
+  }
+
+  .main {
+    width: calc(100% - 48px);
+  }
+
+  .send-box .btn {
+    line-height: 2rem;
+  }
+
+  .navbar header {
+    min-width: 35px;
+  }
+
+  .sidebar {
+    width: 35px;
+    font-size: 0.8rem;
+  }
+
+  ul {
+    padding: 0 0.3rem;
+  }
+
+  .sidebar ul {
+    padding: 0.3rem;
+  }
+
+  .lang-pan {
+    font-size: 0.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .night-mode {
+    padding: 0.1rem;
+    margin: 0.2rem 0.2rem;
   }
 }
