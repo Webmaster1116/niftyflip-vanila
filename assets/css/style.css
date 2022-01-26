@@ -261,9 +261,8 @@ ul li:active {
 }
 
 .pop-comp-wrapper {
-  background-color: #292e42 !important;
-  width: 150px;
-  height: 200px;
+  background-color: #232639 !important;
+  box-shadow: 0 0 5px #333 !important;
   border-radius: 10px !important;
   -webkit-border-radius: 10px !important;
   -moz-border-radius: 10px !important;
@@ -274,6 +273,11 @@ ul li:active {
 .pop-comp-content {
   z-index: 9999 !important;
   padding: 1rem !important;
+}
+
+.pop-comp-content ul li {
+  display: block;
+  margin: 0.5rem 0;
 }
 
 .pop-comp-arrow::before {
@@ -758,7 +762,7 @@ header:hover {
   display: inline-block;
   background-color: #292e42;
   width: 100px;
-  height: 16vh;
+  height: 150px;
   font-size: 1rem;
   padding: 1rem;
   margin: 1rem;
@@ -798,6 +802,7 @@ header:hover {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  overflow: auto;
 }
 
 .checkout .btn-close {
@@ -947,6 +952,10 @@ header:hover {
 }
 
 @media (max-width: 460px) {
+  .logo {
+    width: 140px;
+  }
+
   .logo img {
     width: 20px;
   }
@@ -1017,5 +1026,23 @@ header:hover {
 
   .checkout {
     min-width: 160px;
+  }
+}
+
+@media (max-height: 900px) {
+  .checkout {
+    height: 65vh;
+  }
+}
+
+@media (max-height: 768px) {
+  .checkout {
+    height: 60vh;
+  }
+}
+
+@media (max-height: 680px) {
+  .checkout {
+    height: 55vh;
   }
 }
