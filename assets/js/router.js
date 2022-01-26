@@ -54,9 +54,18 @@ class Router {
       });
 
       // Modal hide and show function
-      let openModal = document.getElementById("view_modal");
-      let closeModal = document.getElementById("close_modal");
-      const modal = document.getElementsByClassName("modal-container")[0];
+      let btnSpectate = document.getElementsByClassName("spectate");
+      let btnJoin = document.getElementsByClassName("join");
+      let btnSol = document.getElementsByClassName("sol");
+      let btnGameCreate = document.getElementById("btn_create");
+      let closeSpectateModal = document.getElementById("close_spectate");
+      let closeJoinModal = document.getElementById("close_join");
+      let closeSolModal = document.getElementById("close_sol");
+      let closeCreateModal = document.getElementById("close_create");
+      const spectateModal = document.getElementsByClassName("specate-modal")[0];
+      const joinModal = document.getElementsByClassName("join-modal")[0];
+      const solModal = document.getElementsByClassName("sol-modal")[0];
+      const gameCreateModal = document.getElementsByClassName("game-modal")[0];
 
       openSideBar.addEventListener("click", () => {
         if (getComputedStyle(sideBar).display == "flex") {
@@ -82,56 +91,84 @@ class Router {
         ];
       }
 
-      openModal.addEventListener("click", () => {
-        // Clear chart
+      const spectateChart = () => {
+        // Clear modal
         while (document.getElementById("chart_panel").hasChildNodes()) {
           document
             .getElementById("chart_panel")
             .removeChild(document.getElementById("chart_panel").firstChild);
         }
 
-        // Chart data get function
-        // create a data set on our data
+        // Draw chart
         var dataSet = anychart.data.set(getData());
-
-        // map data for the first series,
-        // take x from the zero column and value from the first column
         var firstSeriesData = dataSet.mapAs({ x: 0, value: 1 });
-
-        // map data for the second series,
-        // take x from the zero column and value from the second column
         var secondSeriesData = dataSet.mapAs({ x: 0, value: 2 });
 
-        // create a line chart
         var chart = anychart.line();
         chart.background().fill("transparent");
+        chart.xScale().mode("continuous");
 
         var xlabels = chart.xAxis().labels();
         xlabels.enabled(false);
 
-        chart.xScale().mode("continuous");
-
-        // create the first series with the mapped data
         var firstSeries = chart.line(firstSeriesData);
         firstSeries.name("A");
 
-        // create the second series with the mapped data
         var secondSeries = chart.line(secondSeriesData);
         secondSeries.name("B");
 
-        // turn the legend on
         chart.legend().enabled(false);
-
-        // set the container id for the line chart
         chart.container("chart_panel");
-
-        // draw the line chart
         chart.draw();
-        modal.classList.toggle("toggle-modal");
+
+        // Display modal
+        spectateModal.classList.toggle("toggle-modal");
+      };
+
+      const joinModalFunc = () => {
+        // Display modal
+        joinModal.classList.toggle("toggle-modal");
+      };
+
+      const solModalFunc = () => {
+        // Display modal
+        solModal.classList.toggle("toggle-modal");
+      };
+
+      const gameCreateModalFunc = () => {
+        // Display modal
+        gameCreateModal.classList.toggle("toggle-modal");
+      };
+
+      // Get spectate button click event
+      for (let i = 0; i < btnSpectate.length; i++) {
+        btnSpectate[i].addEventListener("click", spectateChart, false);
+      }
+
+      for (let i = 0; i < btnJoin.length; i++) {
+        btnJoin[i].addEventListener("click", joinModalFunc, false);
+      }
+
+      for (let i = 0; i < btnSol.length; i++) {
+        btnSol[i].addEventListener("click", solModalFunc, false);
+      }
+
+      btnGameCreate.addEventListener("click", gameCreateModalFunc, false);
+
+      closeSpectateModal.addEventListener("click", () => {
+        spectateModal.classList.toggle("toggle-modal");
       });
 
-      closeModal.addEventListener("click", () => {
-        modal.classList.toggle("toggle-modal");
+      closeJoinModal.addEventListener("click", () => {
+        joinModal.classList.toggle("toggle-modal");
+      });
+
+      closeSolModal.addEventListener("click", () => {
+        solModal.classList.toggle("toggle-modal");
+      });
+
+      closeCreateModal.addEventListener("click", () => {
+        gameCreateModal.classList.toggle("toggle-modal");
       });
     } else {
       // Button element variables
