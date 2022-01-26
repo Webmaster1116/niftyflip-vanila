@@ -783,19 +783,8 @@ const routes = [
                 <div class="checkout text-center">
                     <span class="btn btn-close" id="close_checkout">x</span>
                     <h5>Subscribe Items</h5>
-                    <div class="items">
-                    <img src="assets/img/avatar1.png" />
-                    <div class="d-flex-col justify-content-between">
-                        <p>Lorem ipsum</p>
-                        <p class="font-bold">150&nbsp;SOL</p>
-                    </div>
-                    </div>
-                    <div class="items">
-                    <img src="assets/img/avatar1.png" />
-                    <div class="d-flex-col justify-content-between">
-                        <p>Lorem ipsum</p>
-                        <p class="font-bold">150&nbsp;SOL</p>
-                    </div>
+                    <div id="items_checkout">
+                       
                     </div>
                     <div class="checkout-footer">
                     <button class="btn btn-pink">DEPOSIT</button>

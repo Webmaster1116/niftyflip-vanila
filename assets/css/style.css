@@ -1071,6 +1071,11 @@ select::-ms-expand {
   background-color: #292e42;
 }
 
+#items_checkout {
+  height: calc(100% - 117px);
+  overflow-y: auto;
+}
+
 /* Responsive style */
 @media (max-width: 1512px) {
   .dashboard {
