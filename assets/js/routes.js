@@ -496,145 +496,145 @@ const routes = [
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>  
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>  
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>  
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>  
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>
                                 <div class="game-card">
                                     <img src="assets/img/avatar1.png">
                                     <div class="dark-panel justify-content-center">
-                                        <span>aaa</span>
+                                        <span>190 SOL</span>
                                     </div>
                                 </div>  
                             </div>
