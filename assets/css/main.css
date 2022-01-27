@@ -364,7 +364,7 @@ ul li:active {
 }
 
 .btn-close:hover {
-  color: #ffffff;
+  color: #969494;
 }
 
 .btn-pink:hover {
@@ -724,7 +724,11 @@ header:hover {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
-  display: none;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 600ms, visibility 600ms;
+  transition: opacity 600ms, visibility 600ms;
   justify-content: center;
   align-items: center;
   z-index: 2000;
@@ -764,7 +768,8 @@ header:hover {
 }
 
 .toggle-modal {
-  display: flex;
+  visibility: visible;
+  opacity: 1;
 }
 
 .anychart-credits {
