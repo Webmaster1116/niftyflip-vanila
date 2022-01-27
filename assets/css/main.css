@@ -358,13 +358,13 @@ ul li:active {
 .btn-close {
   background-color: transparent;
   border: none;
-  color: #444444;
+  color: #ffffff;
   font-size: 1.5rem;
   padding: 0 0 0 0.2rem;
 }
 
 .btn-close:hover {
-  color: #969494;
+  color: #ffffff;
 }
 
 .btn-pink:hover {

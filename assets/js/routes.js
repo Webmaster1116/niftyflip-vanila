@@ -1,7 +1,7 @@
 const routes = [
   {
     path: "/",
-    template: `< class="dashboard">
+    template: `<div class="dashboard">
                 <!-- Begin: Introduction part -->
                 <div class="intro">
                 <div class="text">
@@ -820,4 +820,4 @@ const routes = [
                 </div>
             </div>`,
   },
-]
+];
