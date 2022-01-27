@@ -1,7 +1,7 @@
 const routes = [
   {
     path: "/",
-    template: `<div class="dashboard">
+    template: `< class="dashboard">
                 <!-- Begin: Introduction part -->
                 <div class="intro">
                 <div class="text">
@@ -43,14 +43,14 @@ const routes = [
 
                 <!-- Begin: Filter and game create part -->
                 <div class="filter-group my-3">
-                <div class="d-flex align-items-center toggle color-white sm-12">
+                <div class="d-flex align-items-center toggle color-white vsm-12">
                     <span>Sort by price</span>
                     <input type="checkbox" id="switch" /><label for="switch"
                     >Toggle</label
                     >
                     <span style="margin-left: 10px">Sort by date</span>
                 </div>
-                <div class="d-flex sm-8 text-right">
+                <div class="d-flex vsm-12 text-right justify-content-between">
                     <div class="d-flex align-items-center dark mx-03">
                     <i class="fa fa-circle-o" style="font-size: 1.4rem"></i>
                     <span class="mx-03"
@@ -64,120 +64,184 @@ const routes = [
                     >
                     </div>
                 </div>
-                <div class="sm-4">
-                    <button class="btn btn-pink line-height-2" id="btn_create">Create games</button>
+                <div class="tsm-12 vsm-12 text-center">
+                    <button class="btn btn-pink line-height-2" id="btn_create">Create&nbsp;games</button>
                 </div>
                 </div>
                 <!-- End: Filter and game create part -->
 
                 <!-- Begin: List part -->
                 <div class="list">
-                <div class="d-flex aling-items-center sm-12">
-                    <div class="avatar-list">
-                    <div class="dark-panel">
-                        <i
-                        class="fa fa-circle-o pr-03"
-                        style="border-right: 1px solid #262c40"
-                        ></i>
-                        <img
-                        src="assets/img/avatarmini1.png"
-                        class="mx-03"
-                        style="border-radius: 50%"
-                        width="20px"
-                        />
-                        <img
-                        src="assets/img/avatarmini1.png"
-                        class="mx-03 avatar-outline"
-                        width="20px"
-                        />
+                    <div class="d-flex aling-items-center tsm-12 flex-wrap">
+                        <div class="avatar-list">
+                            <div class="dark-panel">
+                                <i
+                                class="fa fa-circle-o pr-03"
+                                style="border-right: 1px solid #262c40"
+                                ></i>
+                                <img
+                                src="assets/img/avatarmini1.png"
+                                class="mx-03"
+                                style="border-radius: 50%"
+                                width="20px"
+                                />
+                                <img
+                                src="assets/img/avatarmini1.png"
+                                class="mx-03 avatar-outline"
+                                width="20px"
+                                />
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between ssm-12">
+                            <div class="dark-panel mx-03 ml-03">
+                                <img
+                                    src="assets/img/avatar.gif"
+                                    width="23px"
+                                    style="border-radius: 50%"
+                                />
+                            </div>
+                            <div class="dark-panel mx-03">
+                                <img
+                                    src="assets/img/avatar.gif"
+                                    width="23px"
+                                    style="border-radius: 50%"
+                                />
+                            </div>
+                            <div class="dark-panel mx-03">
+                                <img
+                                    src="assets/img/avatar.gif"
+                                    width="23px"
+                                    style="border-radius: 50%"
+                                />
+                            </div>
+                            <div class="dark-panel mx-03">
+                                <img
+                                    src="assets/img/avatar.gif"
+                                    width="23px"
+                                    style="border-radius: 50%"
+                                />
+                            </div>
+                        </div>
                     </div>
+                    <div class="item-list">
+                        <div class="dark-panel color-white sol">19&nbsp;SOL</div>
+                        <div class="dark-panel color-white join">Join</div>
+                        <div class="dark-panel color-white spectate">
+                        <i class="fa fa-eye"></i
+                        ><span style="margin-left: 5px">Spectate</span>
+                        </div>
                     </div>
-                    <div class="dark-panel mx-03 ml-03">
-                    <img
-                        src="assets/img/avatar.gif"
-                        width="23px"
-                        style="border-radius: 50%"
-                    />
-                    </div>
-                    <div class="dark-panel mx-03">
-                    <img
-                        src="assets/img/avatar.gif"
-                        width="23px"
-                        style="border-radius: 50%"
-                    />
-                    </div>
-                    <div class="dark-panel mx-03">
-                    <img
-                        src="assets/img/avatar.gif"
-                        width="23px"
-                        style="border-radius: 50%"
-                    />
-                    </div>
-                    <div class="dark-panel mx-03">
-                    <img
-                        src="assets/img/avatar.gif"
-                        width="23px"
-                        style="border-radius: 50%"
-                    />
-                    </div>
-                </div>
-                <div class="item-list">
-                    <div class="dark-panel color-white sol">19&nbsp;SOL</div>
-                    <div class="dark-panel color-white join">Join</div>
-                    <div class="dark-panel color-white spectate">
-                    <i class="fa fa-eye"></i
-                    ><span style="margin-left: 5px">Spectate</span>
-                    </div>
-                </div>
                 </div>
                 <div class="list">
-                <div class="d-flex aling-items-center sm-12">
+                    <div class="d-flex aling-items-center tsm-12 flex-wrap">
+                        <div class="avatar-list">
+                            <div class="dark-panel">
+                                <i
+                                class="fa fa-circle-o pr-03"
+                                style="border-right: 1px solid #262c40"
+                                ></i>
+                                <img
+                                src="assets/img/avatarmini1.png"
+                                class="mx-03"
+                                style="border-radius: 50%"
+                                width="20px"
+                                />
+                                <img
+                                src="assets/img/avatarmini1.png"
+                                class="mx-03 avatar-outline"
+                                width="20px"
+                                />
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between ssm-12">
+                            <div class="dark-panel mx-03 ml-03">
+                                <img
+                                    src="assets/img/avatar.gif"
+                                    width="23px"
+                                    style="border-radius: 50%"
+                                />
+                            </div>
+                            <div class="dark-panel mx-03">
+                                <img
+                                    src="assets/img/avatar.gif"
+                                    width="23px"
+                                    style="border-radius: 50%"
+                                />
+                            </div>
+                            <div class="dark-panel mx-03">
+                                <img
+                                    src="assets/img/avatar.gif"
+                                    width="23px"
+                                    style="border-radius: 50%"
+                                />
+                            </div>
+                            <div class="dark-panel mx-03">
+                                <img
+                                    src="assets/img/avatar.gif"
+                                    width="23px"
+                                    style="border-radius: 50%"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-list">
+                        <div class="dark-panel color-white sol">19&nbsp;SOL</div>
+                        <div class="dark-panel color-white join">Join</div>
+                        <div class="dark-panel color-white spectate">
+                        <i class="fa fa-eye"></i
+                        ><span style="margin-left: 5px">Spectate</span>
+                        </div>
+                    </div>
+                </div><div class="list">
+                <div class="d-flex aling-items-center tsm-12 flex-wrap">
                     <div class="avatar-list">
-                    <div class="dark-panel">
-                        <i
-                        class="fa fa-circle-o pr-03"
-                        style="border-right: 1px solid #262c40"
-                        ></i>
-                        <img
-                        src="assets/img/avatarmini1.png"
-                        class="mx-03"
-                        style="border-radius: 50%"
-                        width="20px"
-                        />
-                        <img
-                        src="assets/img/avatarmini1.png"
-                        class="mx-03 avatar-outline"
-                        width="20px"
-                        />
+                        <div class="dark-panel">
+                            <i
+                            class="fa fa-circle-o pr-03"
+                            style="border-right: 1px solid #262c40"
+                            ></i>
+                            <img
+                            src="assets/img/avatarmini1.png"
+                            class="mx-03"
+                            style="border-radius: 50%"
+                            width="20px"
+                            />
+                            <img
+                            src="assets/img/avatarmini1.png"
+                            class="mx-03 avatar-outline"
+                            width="20px"
+                            />
+                        </div>
                     </div>
-                    </div>
-                    <div class="dark-panel mx-03 ml-03">
-                    <img
-                        src="assets/img/avatar.gif"
-                        width="23px"
-                        style="border-radius: 50%"
-                    />
-                    </div>
-                    <div class="dark-panel mx-03">
-                    <img
-                        src="assets/img/avatar.gif"
-                        width="23px"
-                        style="border-radius: 50%"
-                    />
-                    </div>
-                    <div class="dark-panel mx-03">
-                    <img
-                        src="assets/img/avatar.gif"
-                        width="23px"
-                        style="border-radius: 50%"
-                    />
-                    </div>
-                    <div class="dark-panel mx-03">
-                    <img
-                        src="assets/img/avatar.gif"
-                        width="23px"
-                        style="border-radius: 50%"
-                    />
+                    <div class="d-flex align-items-center justify-content-between ssm-12">
+                        <div class="dark-panel mx-03 ml-03">
+                            <img
+                                src="assets/img/avatar.gif"
+                                width="23px"
+                                style="border-radius: 50%"
+                            />
+                        </div>
+                        <div class="dark-panel mx-03">
+                            <img
+                                src="assets/img/avatar.gif"
+                                width="23px"
+                                style="border-radius: 50%"
+                            />
+                        </div>
+                        <div class="dark-panel mx-03">
+                            <img
+                                src="assets/img/avatar.gif"
+                                width="23px"
+                                style="border-radius: 50%"
+                            />
+                        </div>
+                        <div class="dark-panel mx-03">
+                            <img
+                                src="assets/img/avatar.gif"
+                                width="23px"
+                                style="border-radius: 50%"
+                            />
+                        </div>
                     </div>
                 </div>
                 <div class="item-list">
@@ -188,66 +252,7 @@ const routes = [
                     ><span style="margin-left: 5px">Spectate</span>
                     </div>
                 </div>
-                </div>
-                <div class="list">
-                <div class="d-flex aling-items-center sm-12">
-                    <div class="avatar-list">
-                    <div class="dark-panel">
-                        <i
-                        class="fa fa-circle-o pr-03"
-                        style="border-right: 1px solid #262c40"
-                        ></i>
-                        <img
-                        src="assets/img/avatarmini1.png"
-                        class="mx-03"
-                        style="border-radius: 50%"
-                        width="20px"
-                        />
-                        <img
-                        src="assets/img/avatarmini1.png"
-                        class="mx-03 avatar-outline"
-                        width="20px"
-                        />
-                    </div>
-                    </div>
-                    <div class="dark-panel mx-03 ml-03">
-                    <img
-                        src="assets/img/avatar.gif"
-                        width="23px"
-                        style="border-radius: 50%"
-                    />
-                    </div>
-                    <div class="dark-panel mx-03">
-                    <img
-                        src="assets/img/avatar.gif"
-                        width="23px"
-                        style="border-radius: 50%"
-                    />
-                    </div>
-                    <div class="dark-panel mx-03">
-                    <img
-                        src="assets/img/avatar.gif"
-                        width="23px"
-                        style="border-radius: 50%"
-                    />
-                    </div>
-                    <div class="dark-panel mx-03">
-                    <img
-                        src="assets/img/avatar.gif"
-                        width="23px"
-                        style="border-radius: 50%"
-                    />
-                    </div>
-                </div>
-                <div class="item-list">
-                    <div class="dark-panel color-white sol">19&nbsp;SOL</div>
-                    <div class="dark-panel color-white join">Join</div>
-                    <div class="dark-panel color-white spectate">
-                    <i class="fa fa-eye"></i
-                    ><span style="margin-left: 5px">Spectate</span>
-                    </div>
-                </div>
-                </div>
+            </div>
                 <!-- End: List part -->
             </div>
             <!-- Begin: Spectate modal -->
@@ -312,44 +317,47 @@ const routes = [
                             <div class="d-flex align-items-center justify-content-between flex-wrap mxy-51">
                                 <div class="md-4 msm-6 vsm-12">
                                     <div class="d-flex align-items-center dark mx-03">
-                                        <i class="fa fa-eye mx-03"></i><span style="padding:0.3rem">private key</span>
+                                        <i class="fa fa-eye mx-03"></i><span style="padding:0.3rem; font-size:0.8rem">private key</span>
                                     </div>
                                 </div>
                                 <div class="md-4 msm-6 vsm-12">
                                     <div class="d-flex align-items-center dark mx-03">
-                                        <i class="fa fa-key mx-03"></i><span style="padding:0.3rem">private key</span>
+                                        <i class="fa fa-key mx-03"></i><span style="padding:0.3rem; font-size:0.8rem">private key</span>
                                     </div>
                                 </div>
                                 <div class="md-4 msm-6 vsm-12">
                                     <div class="d-flex align-items-center dark mx-03">
-                                        <i class="fa fa-eye mx-03"></i><span style="padding:0.3rem">private key</span>
+                                        <i class="fa fa-eye mx-03"></i><span style="padding:0.3rem; font-size:0.8rem">private key</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between flex-wrap mxy-51">
                                 <div class="md-6 vsm-12">
                                     <div class="d-flex align-items-center justify-content-between dark mx-03">
-                                        <span>48.11%</span><span style="padding:0.3rem">20&nbsp;SOL</span>
+                                        <span style="font-size:0.8rem">48.11%</span><span style="padding:0.3rem; font-size:0.8rem">20&nbsp;SOL</span>
                                     </div>
                                 </div>
                                 <div class="md-6 vsm-12">
                                     <div class="d-flex align-items-center justify-content-between dark mx-03">
-                                        <span>0%</span><span style="padding:0.3rem">0&nbsp;SOL</span>
+                                        <span style="font-size:0.8rem">0%</span><span style="padding:0.3rem; font-size:0.8rem">0&nbsp;SOL</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex flex-wrap align-items-center justify-content-between my-05">
+                            <div class="d-flex flex-wrap align-items-center justify-content-between my-05 footer">
                                 <div class="md-6 vsm-12 color-white mxy-51" style="padding: 0 0.3rem; font-size: 0.8rem">
-                                    <div class="d-flex align-items-center justify-content-between my-05">
-                                        <img src="assets/img/avatar.gif" width="30px" style="border-radius: 10px"><span>NFT&nbsp;Item&nbsp;#1</span><span style="padding:0.3rem">10&nbsp;SOL</span>
+                                    <div class="d-flex align-items-center my-05">
+                                        <img src="assets/img/avatar.gif" class="nft-avatar"><span class="mx-1">NFT&nbsp;Item&nbsp;#1</span><span style="padding:0.3rem">10&nbsp;SOL</span>
                                     </div>
-                                    <div class="d-flex align-items-center justify-content-between my-05">
-                                        <img src="assets/img/avatar.gif" width="30px" style="border-radius: 10px"><span>NFT&nbsp;Item&nbsp;#2</span><span style="padding:0.3rem">10&nbsp;SOL</span>
+                                    <div class="d-flex align-items-center my-05">
+                                        <img src="assets/img/avatar.gif" class="nft-avatar"><span class="mx-1">NFT&nbsp;Item&nbsp;#2</span><span style="padding:0.3rem">10&nbsp;SOL</span>
                                     </div>
                                 </div>
                                 <div class="md-6 vsm-12 color-white mxy-51" style="padding: 0 0.3rem; font-size: 0.8rem">
                                     
                                 </div>
+                            </div>
+                            <div class="text-center">
+                                <span class="color-white" style="font-size:0.8rem">Ends At Tue, 25 Jan 2022 04:00:15 GMT+0</span>
                             </div>
                         </div>
                     </div>
@@ -389,46 +397,49 @@ const routes = [
                             <div class="d-flex align-items-center justify-content-between flex-wrap mxy-51">
                                 <div class="md-4 msm-6 vsm-12">
                                     <div class="d-flex align-items-center dark mx-03">
-                                        <i class="fa fa-eye mx-03"></i><span style="padding:0.3rem">private key</span>
+                                        <i class="fa fa-eye mx-03"></i><span style="padding:0.3rem; font-size:0.8rem">private key</span>
                                     </div>
                                 </div>
                                 <div class="md-4 msm-6 vsm-12">
                                     <div class="d-flex align-items-center dark mx-03">
-                                        <i class="fa fa-key mx-03"></i><span style="padding:0.3rem">private key</span>
+                                        <i class="fa fa-key mx-03"></i><span style="padding:0.3rem; font-size:0.8rem">private key</span>
                                     </div>
                                 </div>
                                 <div class="md-4 msm-6 vsm-12">
                                     <div class="d-flex align-items-center dark mx-03">
-                                        <i class="fa fa-eye mx-03"></i><span style="padding:0.3rem">private key</span>
+                                        <i class="fa fa-eye mx-03"></i><span style="padding:0.3rem; font-size:0.8rem">private key</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between flex-wrap mxy-51">
                                 <div class="md-6 vsm-12">
                                     <div class="d-flex align-items-center justify-content-between dark mx-03">
-                                        <span>48.11%</span><span style="padding:0.3rem">20&nbsp;SOL</span>
+                                        <span style="font-size:0.8rem">48.11%</span><span style="padding:0.3rem; font-size:0.8rem">20&nbsp;SOL</span>
                                     </div>
                                 </div>
                                 <div class="md-6 vsm-12">
                                     <div class="d-flex align-items-center justify-content-between dark mx-03">
-                                        <span>0%</span><span style="padding:0.3rem">0&nbsp;SOL</span>
+                                        <span style="font-size:0.8rem">0%</span><span style="padding:0.3rem; font-size:0.8rem">0&nbsp;SOL</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between flex-wrap">
-                                <div class="md-6 vsm-12 color-white mxy-51" style="padding: 0 0.3rem; font-size: 0.8rem">
-                                    <div class="d-flex align-items-center justify-content-between my-05">
-                                        <img src="assets/img/avatar.gif" width="30px" style="border-radius: 10px"><span>NFT&nbsp;Item&nbsp;#1</span><span style="padding:0.3rem">10&nbsp;SOL</span>
+                            <div class="d-flex justify-content-between flex-wrap footer">
+                                <div class="vsm-12 color-white mxy-51" style="padding: 0 0.3rem; font-size: 0.8rem">
+                                    <div class="d-flex align-items-center my-05">
+                                        <img src="assets/img/avatar.gif" class="nft-avatar"><span class="mx-1">NFT&nbsp;Item&nbsp;#1</span><span style="padding:0.3rem">10&nbsp;SOL</span>
                                     </div>
-                                    <div class="d-flex align-items-center justify-content-between my-05">
-                                        <img src="assets/img/avatar.gif" width="30px" style="border-radius: 10px"><span>NFT&nbsp;Item&nbsp;#2</span><span style="padding:0.3rem">10&nbsp;SOL</span>
-                                    </div>
-                                </div>
-                                <div class="md-6 vsm-12 color-white mxy-51" style="padding: 0 0.3rem; font-size: 0.8rem">
-                                    <div class="d-flex align-items-center justify-content-between my-05">
-                                        <img src="assets/img/avatar.gif" width="30px" style="border-radius: 10px"><span>NFT&nbsp;Item&nbsp;#2</span><span style="padding:0.3rem">10&nbsp;SOL</span>
+                                    <div class="d-flex align-items-center my-05">
+                                        <img src="assets/img/avatar.gif" class="nft-avatar"><span class="mx-1">NFT&nbsp;Item&nbsp;#2</span><span style="padding:0.3rem">10&nbsp;SOL</span>
                                     </div>
                                 </div>
+                                <div class="vsm-12 color-white mxy-51" style="padding: 0 0.3rem; font-size: 0.8rem">
+                                    <div class="d-flex align-items-center my-05">
+                                        <img src="assets/img/avatar.gif" class="nft-avatar"><span class="mx-1">NFT&nbsp;Item&nbsp;#2</span><span style="padding:0.3rem">10&nbsp;SOL</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <span class="color-white" style="font-size:0.8rem">Ends At Tue, 25 Jan 2022 04:00:15 GMT+0</span>
                             </div>
                         </div>
                     </div>
@@ -448,20 +459,36 @@ const routes = [
                     </div>
                     <div class="modal-body">
                         <div class="panel">
-                            <div class="d-flex justify-content-between my-05">    
-                                <div class="md-6 mx-03">
+                            <div class="d-flex align-items-center justify-content-between search-wrap my-05">    
+                                <div class="md-6 vsm-12 mx-03">
                                     <div class="search-group">
                                         <i class="fa fa-search"></i>
                                         <input type="text" class="search-form ml-03">
                                     </div>
                                 </div>
-                                <div class="md-6 mx-03">
+                                <div class="md-6 vsm-12 mx-03">
                                     <div class="select-group">
                                         <span>Sort&nbsp;by:</span>
-                                        <select class="select-form ml-03">
-                                            <option>Price ascending</option>
-                                            <option>Price descending</option>
-                                        </select>
+                                        
+                                        <div class="select-box">
+                                            <div class="options-container">
+                                                <div class="option">
+                                                    <input type="radio" class="radio" id="grade-a" name="category" />
+                                                    <label for="grade-a">
+                                                        <h5>Ascending</h5>
+                                                    </label>
+                                                </div>
+                                                <div class="option">
+                                                    <input type="radio" class="radio" id="grade-a" name="category" />
+                                                    <label for="grade-d">
+                                                        <h5>Descending</h5>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="selected">
+                                                <h5>Descending</h5>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
