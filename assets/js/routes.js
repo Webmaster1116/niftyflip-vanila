@@ -423,17 +423,17 @@ const routes = [
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between flex-wrap footer">
-                                <div class="vsm-12 color-white mxy-51" style="padding: 0 0.3rem; font-size: 0.8rem">
-                                    <div class="d-flex align-items-center my-05">
+                            <div class="d-flex flex-wrap-res footer" style="padding:0 1rem">
+                                <div class="md-6 vsm-12 color-white" style="padding: 0 0.3rem; font-size: 0.8rem">
+                                    <div class="d-flex justify-content-between align-items-center my-05">
                                         <img src="assets/img/avatar.gif" class="nft-avatar"><span class="mx-1">NFT&nbsp;Item&nbsp;#1</span><span style="padding:0.3rem">10&nbsp;SOL</span>
                                     </div>
-                                    <div class="d-flex align-items-center my-05">
+                                    <div class="d-flex justify-content-between align-items-center my-05">
                                         <img src="assets/img/avatar.gif" class="nft-avatar"><span class="mx-1">NFT&nbsp;Item&nbsp;#2</span><span style="padding:0.3rem">10&nbsp;SOL</span>
                                     </div>
                                 </div>
-                                <div class="vsm-12 color-white mxy-51" style="padding: 0 0.3rem; font-size: 0.8rem">
-                                    <div class="d-flex align-items-center my-05">
+                                <div class="md-6 vsm-12 color-white" style="padding: 0 0.3rem; font-size: 0.8rem">
+                                    <div class="d-flex justify-content-between align-items-center my-05">
                                         <img src="assets/img/avatar.gif" class="nft-avatar"><span class="mx-1">NFT&nbsp;Item&nbsp;#2</span><span style="padding:0.3rem">10&nbsp;SOL</span>
                                     </div>
                                 </div>
@@ -638,15 +638,21 @@ const routes = [
                                     </div>
                                 </div>  
                             </div>
-                            <div class="d-flex align-items-center justify-content-between mt-2">
-                                <div class="d-flex align-items-center">
-                                    <img src="assets/img/RSB.png" style="width:55px" class="mx-03">
-                                    <img src="assets/img/RSR.png" style="width:55px" class="mx-03">
+                            <div class="d-flex flex-wrap-res footer" style="padding:0 1rem">
+                                <div class="md-6 vsm-12 color-white" style="padding: 0 0.3rem; font-size: 0.8rem">
+                                    <div class="d-flex justify-content-between align-items-center my-05">
+                                        <img src="assets/img/avatar.gif" class="nft-avatar"><span class="mx-1">NFT&nbsp;Item&nbsp;#1</span><span style="padding:0.3rem">10&nbsp;SOL</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center my-05">
+                                        <img src="assets/img/avatar.gif" class="nft-avatar"><span class="mx-1">NFT&nbsp;Item&nbsp;#2</span><span style="padding:0.3rem">10&nbsp;SOL</span>
+                                    </div>
                                 </div>
-                                <div class="d-flex-col justify-content-between text-center color-white">
-                                    <p style="font-size: 0.8rem;margin:0.2rem">Selected:&nbsp;190&nbsp;SOL</p>
-                                    <button class="btn btn-pink" id="create">Create&nbsp;game</button>
+                                <div class="md-6 vsm-12 color-white" style="padding: 0 0.3rem; font-size: 0.8rem">
+                                   
                                 </div>
+                            </div>
+                            <div class="text-center">
+                                <span class="color-white" style="font-size:0.8rem">Ends At Tue, 25 Jan 2022 04:00:15 GMT+0</span>
                             </div>
                         </div>
                     </div>
@@ -820,4 +826,4 @@ const routes = [
                 </div>
             </div>`,
   },
-];
+]
